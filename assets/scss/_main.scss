@@ -1,0 +1,434 @@
+.section {
+    display: flex;
+    padding-inline: 5rem;
+    
+    .illustration{
+        width: 100%;
+       
+    }
+    
+}
+
+.first-section {
+        margin-bottom: 5rem;
+        font-family: "open sans";
+
+        .image {
+            align-self: center;
+           }
+
+
+    .note {
+        align-self: center;
+        
+        h2 {
+            margin-bottom: 1.1rem;
+            font-family: "Raleway";
+            font-size: 2.6rem;
+            line-height: 3.8rem;
+        }
+    
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 37.8rem;
+            color: var(--very-dark-blue);
+        }  
+
+        form {
+            display: flex;
+            gap: 1rem;
+        }
+
+        input {
+           border-radius: 2px;
+           border-width: 1px;
+           padding-left: 1rem;
+           height: 2.6rem;
+           min-width: 30%;
+        }
+
+        .email::placeholder {
+            font-size: 0.8rem;
+        }
+        
+        button {
+            font-size: 0.8rem;
+            border-radius: 2px;
+            border-width: 0;
+            background-color: var(--bright-blue);
+            height: 2.6rem;
+            min-width: 25%;
+            color: white;
+        }
+    }
+
+
+}
+
+.half-circle {
+    position: relative;
+    top: 4px;
+    width: 100%;
+}
+
+.second-section {
+   background-color: #f9f8fe; 
+   padding-bottom: 5rem;
+   font-family: "open sans";
+
+   .note {
+       width: 100%;
+       margin-top: 3rem;
+   }
+
+   
+
+   .image {
+    max-width: 40%;
+    align-self: center;
+   }
+
+   h2 {
+       font-size: 2.6rem;
+       line-height: 3.8rem;
+       margin-bottom: 1.1rem;
+       font-family: "Raleway";
+    }
+
+    p {
+        max-width: 40rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.9rem;
+        font-weight: 400;
+        color: var(--very-dark-blue);
+    }
+
+    a {
+        display: inline-block;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: var(--moderate-cyan);
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid var(--moderate-cyan);
+        margin-bottom: 1.8rem;
+
+    }
+
+    .card {
+
+        box-shadow: 0px 0px 8px -5px black;
+
+        .description {
+            font-size: 0.7rem;
+        }
+
+        padding: 1.3rem;
+        border-radius: 5px;
+        width: 17rem;
+        background-color: white;
+        
+    }
+    
+    .founder-section {
+
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        .avatar {
+            flex-shrink: 0;
+            background-image: url("../images/avatar-testimonial.jpg");
+            background-position: center;
+            background-size: cover;
+            width:1.5rem;
+            height:1.5rem;
+            border-radius: 50%;
+        }
+
+        .ceo {
+            
+            div {
+                font-size: 0.5rem;
+            }
+        }     
+    }
+    
+}
+
+
+.third-section {
+    padding-block: 6rem;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--desaturated-blue);
+    font-family: "open sans";
+    
+    h3 {
+        color: white;
+        font-size: 1.8rem;
+        letter-spacing: 0.05rem;
+        font-family: "Raleway";
+        margin-bottom: 1.5rem;
+    }
+    
+    p {
+       font-size: 1.2rem;
+       margin-top: .9rem;
+       font-weight: 400;
+       color: white;
+       max-width: 40rem;
+    }
+    form {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 50%;
+    }
+    input {
+        display: inline-block;
+        border-radius: 2px;
+        border-width: 1px;
+        padding-left: 1rem;
+        height: 2.6rem;
+        width:100%;
+        max-width: 28rem;
+        
+        
+    }
+     .email::placeholder {
+         font-size: 0.8rem;
+    }
+
+     button {
+        width:12rem;
+        font-size: 0.8rem;
+        border-radius: 2px;
+        border-width: 0px;
+        background-color: var(--bright-blue);
+        height: 2.6rem;
+        color: white;
+     }
+ 
+}
+
+
+
+
+@media (max-width:992px) {
+    
+    .first-section{
+        padding-inline: 4rem;
+
+        .note {
+
+
+           
+
+            h2{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }    
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            form {
+
+                flex-direction: column;
+                gap: 0.5rem;
+                
+                input{
+                    width: 70%;
+                    min-width:200px;
+                }
+
+                button {
+                    width: 40%;
+                    min-width: 200px;
+                }    
+            }
+        }
+        
+        
+        
+    }
+
+    .second-section {
+        padding-inline: 4rem;
+
+        .note {
+            
+            h2{
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }    
+            
+            p {
+                font-size: 1rem;
+            }
+
+            a{
+                font-size:1rem;
+                display: inline-block;
+                margin-inline: auto;
+            }
+        }
+    }
+
+    .third-section {
+        padding-inline: 4rem;
+
+        h3 {
+            font-size: 1.5rem;
+         }
+ 
+         p {
+             font-size: 1rem;
+         }
+    }
+}    
+
+@media (max-width:768px) {
+
+    .first-section {
+        text-align: center;
+        flex-direction: column-reverse;
+        gap:3rem;
+        padding-inline: 3rem;
+
+        .note {
+
+
+            p {
+              margin-bottom: 2rem;
+              margin-inline: auto;
+            }
+
+            form {
+              align-items: center;
+              width: 100%;
+              
+
+              input {
+                width: 50%
+                
+              }
+
+              button {
+                width:50%
+              }
+            }
+        }
+
+    }
+
+    .second-section {
+        flex-direction: column-reverse;
+        padding-inline: 3rem;
+
+        .note {
+
+            h2 {
+                text-align: center;
+            }
+            
+        }
+
+        .image {
+            max-width: 100% ;
+        }
+    }
+
+    .third-section {
+        padding-inline: 3rem;
+    }
+
+    .third-section {
+        padding-inline: 3rem;
+        }
+}
+
+@media (max-width:576px) {
+
+    .first-section {
+        text-align: center;
+        flex-direction: column-reverse;
+        gap:3rem;
+        padding-inline: 3rem;
+
+        .note {
+
+            p {
+              margin-bottom: 2rem;
+            }
+
+            form {
+              align-items: center;
+              width: 100%;
+              
+
+              input {
+                width: 60%
+                
+              }
+
+              button {
+                width:60%
+              }
+            }
+        }
+    }
+    
+    .second-section {
+
+
+    .note {
+
+        .card{
+            margin-inline: auto;
+        }
+
+        .link-container {
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    }
+
+    .third-section{ 
+        flex-direction: column;
+
+        h3 {
+          text-align: center;  
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            width: 100%;
+            
+            input {
+                width:70%;
+                margin-inline: auto;
+            }
+            button {
+                width: 70%;
+                margin-inline: auto;
+            }
+        }
+
+    }
+}
+
+
+
+

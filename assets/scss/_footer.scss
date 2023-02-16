@@ -1,0 +1,104 @@
+footer {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-inline: 5rem;
+    background-color: var(--very-dark-blue);
+    font-family: "open sans";
+
+    .logo {
+        height: 50px;
+        margin-bottom: 1.5rem;
+     }
+ 
+
+
+    .information {
+        
+        justify-content: space-between;
+        color: white;
+        display: flex;
+   
+        ul {
+            list-style-type: none;
+        
+            li {
+                font-size: 1.2rem;
+                padding-bottom: 1.2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        .font-icons {
+            display: flex;
+            gap:1rem;
+
+            .fa-brands {
+                padding: 0.5rem;
+                border : 1px solid white; 
+                border-radius: 50%;
+            }
+
+            .fa-facebook-f {
+                padding-inline: 12px;
+               
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:992px) {
+    footer {
+        
+        .information{
+
+            ul{
+                li{
+                    font-size:1rem;
+                }
+            }
+        }
+        padding-inline:4rem;
+    }
+}
+
+
+@media(max-width:768px) {
+    footer {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        padding-inline:3rem;
+        .logo {
+            height:40px;
+        }
+
+        .information{
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: space-between;
+            .fourth-col {
+                width:100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    footer{
+        .logo {
+            height:30px;
+        }
+
+       .information {
+        flex-direction: column;
+       } 
+
+    }
+}
